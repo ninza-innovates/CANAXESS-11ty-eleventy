@@ -1,0 +1,26 @@
+{% if showDate == true or showContact == true %}
+
+<div class="round-container">
+    <h2>Contact us</h2>
+    <p>We’re here to help bring your ideas to life. Whether you need expert support on a project, guidance to solve an accessibility challenge, or just want to explore an idea, we’d love to hear from you.</p>
+
+    <p><a href="{{ "/" | url }}contact/" class="contact btn-link-tertiary">Contact us</a></p>
+
+    <h2 id="newsletter">Sign up to our newsletter</h2>
+    <p>
+        Sign up for our occasional emails packed with insights, tips, and updates we think you'll find valuable and inspiring.
+    </p>
+    
+    <div class="contactForm">
+        <form action="https://canaxess1.createsend.com/t/d/s/nhhkjr/" method="post" id="subForm">
+            <label for="fieldEmail" class="contactForm-label">Your email address</label>
+            <div class="contactForm-field">
+                <input autocomplete="email" id="fieldEmail" name="cm-nhhkjr-nhhkjr" type="email" required class="contactForm-control">
+                <input class="contactForm-button btn-link-tertiary" type="submit" value="Subscribe" name="subscribe">
+            </div>
+        </form>
+    </div>
+
+</div>
+
+{% endif %}

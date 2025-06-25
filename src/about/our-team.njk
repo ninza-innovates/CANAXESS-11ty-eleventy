@@ -1,0 +1,62 @@
+---
+title: Our Core Team
+subtitle: An experienced team who support clients large and small worldwide who understand the challenges of accessibility and know the solutions.
+layout: baseLayout.liquid
+showContact: true
+pagination:
+ data: collections.people-posts
+ alias: peoplePosts
+ size: 10
+ reverse: false
+---
+<div class="content">
+  <div class="content-measure">
+
+  {% for post in peoplePosts %}
+
+    <div class="content-blockA0">
+        <div class="content-blockD">
+            {{ post.templateContent | safe  }}
+
+            <div class="card-display">
+                <div>
+                    <div><img src="{{ "/" | url }}_assets/images/team/{{ post.data.image }}" alt="" width="200" height="200"></div>
+                </div>
+
+            {% if (post.data.linkedin) %}
+
+            <div class="details">
+                
+                <ul>
+                    <li><a href="{{ post.data.linkedin }}">{{ post.data.name }}'s LinkedIn</a></li>
+                </ul>
+            </div>
+
+            {% endif %}
+
+        </div>
+    </div>
+        <div class="content-blockE">
+            <img src="{{ "/" | url }}_assets/images/team/{{ post.data.image }}" alt="" width="200" height="200">
+
+            {% if (post.data.linkedin) %}
+
+            <ul>
+                <li><a href="{{ post.data.linkedin }}">{{ post.data.name }}'s LinkedIn</a></li>
+            </ul>
+
+            {% endif %}
+        </div>
+    </div>
+
+{% endfor %}
+
+    <div class="content-blockA0">
+        <div class="content-blockD">
+{% include "requestQuote.njk" %}
+</div></div>
+
+    </div>
+</div>
+
+

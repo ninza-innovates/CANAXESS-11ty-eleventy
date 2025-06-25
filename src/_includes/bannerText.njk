@@ -1,0 +1,2 @@
+{% if showDate %} <h1 class="heading-title" id="main" aria-hidden="true">{{ title }}</h1><p class="heading-text">Published {{ dateFormat }}</p> {% else %} <h1 class="heading-title" id="main">{{ title }}</h1><p class="heading-text">{{ subtitle }} {% endif %}
+{% if page.url == "/articles/" %} | <a class="whiteText" href="{{ "/" | url }}feed.xml">Articles RSS feed</a></p> {% else %} </p> {% endif %}

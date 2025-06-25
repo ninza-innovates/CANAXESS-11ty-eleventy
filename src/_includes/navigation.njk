@@ -1,0 +1,6 @@
+<ul>
+	<li><a href="{{ "/" | url }}services/" {% if page.url == '/services/' or page.url == '/services/testing/' or page.url == '/services/training/' or page.url == '/services/strategy/' or page.url == '/services/coaching/' %} aria-current="true"{% endif %} aria-current="false">Services</a></li>
+	<li><a href="{{ "/" | url }}articles/" {% if page.url == '/articles/' or page.url == '/articles/1/' or page.url == '/articles/2/' or page.url == '/articles/3/' or page.url == '/articles/4/' or page.url == '/articles/5/' or showDate == true %} aria-current="true"{% endif %} aria-current="false">Articles</a></li>
+	<li><a href="{{ "/" | url }}contact/" {% if page.url == '/contact/' %} aria-current="true"{% endif %} aria-current="false">Contact</a></li>
+	<li><a href="{{ "/" | url }}about/" {% if page.url == '/about/' or page.url == '/about/our-team/' %} aria-current="true"{% endif %} aria-current="false">About</a></li>
+</ul>

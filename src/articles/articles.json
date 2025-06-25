@@ -1,0 +1,7 @@
+{
+    "layout": "blogLayout.liquid",
+	"title": "Articles",
+	"subtitle": "Information, advice and research from our web accessibility services.",
+	"changefreq": "monthly",
+	"priority": "0.9"
+}

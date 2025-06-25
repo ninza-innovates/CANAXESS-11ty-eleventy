@@ -1,0 +1,60 @@
+---
+layout: baseLayout.liquid
+title: The Web Accessibility Experts
+subtitle: We're an inclusive digital accessibility agency putting users first.
+changefreq: never
+priority: 0.5
+---
+
+{% include "services.njk" %}
+
+<div class="content">
+		<div class="content-measure">
+			<div class="content-block">
+				<div class="content-blockC">
+				
+					<h2>Clients we work with</h2>
+					<p>We’ve helped many organisations with their accessibility requirements including the public sector, private industry, and emerging startups nationally and internationally.</p>
+
+					<img class="image--padding" src="./_assets/images/nexer.png" alt="Nexer Digital">
+					<img class="image--padding" src="./_assets/images/coles.png" alt="Coles Supermarket">
+					<img class="image--padding" src="./_assets/images/visionaustralia.png" alt="Vision Australia">
+					<img class="image--padding" src="./_assets/images/cfid.png" alt="Centre for Inclusive Design">
+					<img class="image--padding" src="./_assets/images/dta.png" alt="Australian Government Digital Transformation Agency">
+					<img class="image--padding" src="./_assets/images/hmcourts.png" alt="Her Majesty's Courts and Tribunals Service">
+					<img class="image--padding" src="./_assets/images/claytonutz.png" alt="Clayton Utz">
+					<img class="image--padding" src="./_assets/images/nomensa.png" alt="Nomensa">
+					<img class="image--padding" src="./_assets/images/actgovernment.png" alt="ACT Government">
+					<img class="image--padding" src="./_assets/images/universitywollongong.png" alt="University of Wollongong">
+					<img class="image--padding" src="./_assets/images/universitysydney.png" alt="University of Sydney">
+					<img class="image--padding" src="./_assets/images/swoop.png" alt="SWOOP Analytics">
+					<img class="image--padding" src="./_assets/images/cces.png" alt="Canadian Centre for Ethics in Sport">					
+					<img class="image--padding" src="./_assets/images/uniting.png" alt="Uniting">
+					<img class="image--padding" src="./_assets/images/qbe.png" alt="QBE">
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!--<div class="content">
+	<div class="content-measure">
+		<div class="content-block">
+			<div class="content-blockA">
+				<h2><a href="{{ "/" | url }}articles/">Articles</a></h2>
+				<p>Our latest web accessibility articles.</p>
+			</div>
+
+			<div class="content-blockB">
+				{% for post in collections.posts | reverse | limit(3) %}
+				<div class="publication">
+					<h3 class="publication-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+					<p>{{ post.data.subtitle }}</p>
+					<p class="publication-meta">Published <time date-time="{{ post.date.toISOString() }}">{{ post.data.dateFormat }}</time></p>
+				</div>
+				{% endfor %}				
+			</div>
+		</div>
+	</div>
+</div>-->
+

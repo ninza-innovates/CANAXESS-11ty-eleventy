@@ -1,0 +1,22 @@
+---
+layout: blogLayout.liquid
+title: Thankyou
+subtitle: You're confirmed!
+pagination:
+ data: collections.posts
+ size: 3
+ alias: articlesPosts
+ reverse: true
+ignore: true
+---
+<p>Your newsletter subscription has been confirmed and you have been added to our list and will hear from us soon.</p>
+
+<hr>
+
+{% for post in articlesPosts %}
+    <h2 class="articleList-articleTitle"><a href="{{ post.url }}">{{ post.data.title }}</a></h2> 
+	<p>{{ post.data.subtitle }}</p>
+	<p class="articleList-date">
+	<time date-time="{{ post.date.toISOString() }}">{{ post.data.dateFormat }}</time>
+	</p>
+{% endfor %}

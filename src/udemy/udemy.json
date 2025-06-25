@@ -1,0 +1,8 @@
+{
+    "layout": "blogLayout.liquid",
+    "title": "Udemy Feedback",
+    "subtitle": "Introduction to Web Accessibility WCAG 2.1",
+    "ignore": "true",
+    "changefreq" : "never",
+    "priority" : "0.5"
+}

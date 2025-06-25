@@ -1,0 +1,57 @@
+---
+layout: baseLayout.liquid
+showContact: true
+---
+
+<div class="content">
+  <div class="content-measure">
+
+    <div class="content-block">
+
+      <div class="content-blockD">
+        {{ content }}
+
+        <div class="card-display">
+            <div>
+              <div><img src="{{ "/" | url }}{{PDF-image}}" alt="" width="100%"></div>
+            </div>
+
+          <div class="details">
+          
+            <h3>Details</h3>
+
+            <ul>
+              <li>
+                <a href="{{ PDF-link }}">Download PDF ({{ PDF-size }})</a>
+              </li>
+            </ul>
+          
+            <h3>Licensing</h3>
+            <p class="light">This work is licensed under a Creative Commons Attribution-NonCommerical-ShareAlike 3.0 Unported License.</p>
+
+          </div>
+        </div>
+
+         {% include requestQuote.njk %}
+
+      </div>
+
+      <div class="content-blockE">
+
+        <img src="{{ "/" | url }}{{PDF-image}}" alt="" width="100%">
+
+        <h3>Details</h3>
+
+        <ul>
+          <li>
+            <a href="{{ PDF-link }}">Download PDF ({{ PDF-size }})</a>
+          </li>
+        </ul>
+
+        <h3>Licensing</h3>
+        <p class="light">This work is licensed under a Creative Commons Attribution-NonCommerical-ShareAlike 3.0 Unported License.</p>
+
+      </div>
+    </div>
+  </div>
+</div>

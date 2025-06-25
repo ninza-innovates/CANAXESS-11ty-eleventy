@@ -1,0 +1,36 @@
+---
+layout: baseLayout.liquid
+title: Accessibility Services
+subtitle: We can help you at any stage of your accessibility journey.
+changefreq: monthly
+priority: 0.9
+---
+
+{% include "servicesDifferent.njk" %}
+
+<div class="content">
+	<div class="content-measure">
+        <hr style="max-width:100%;margin-top:0px;margin-bottom:0px;border:0px;border-bottom:1px solid #b7b7b7">
+    </div>
+</div>
+
+<div class="content">
+	<div class="content-measure">
+		<div class="content-block">
+			<div class="content-blockA">
+				<h2><a href="{{ "/" | url }}articles/">Articles</a></h2>
+				<p>Our latest web accessibility articles.</p>
+			</div>
+
+			<div class="content-blockB">
+				{% for post in collections.posts | reverse | limit(2) %}
+				<div class="publication">
+					<h3 class="publication-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+					<p>{{ post.data.subtitle }}</p>
+					<p class="publication-meta">Published <time date-time="{{ post.date.toISOString() }}">{{ post.data.dateFormat }}</time></p>
+				</div>
+				{% endfor %}				
+			</div>
+		</div>
+	</div>
+</div>

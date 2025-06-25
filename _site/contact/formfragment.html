@@ -1,0 +1,20 @@
+<form name="contactSubmission" id="contactSubmission" data-netlify="true" netlify-honeypot="bot-field">
+    <div class="contactForm-div">
+        <input class="actual-hidden" name="bot-field" tabindex="-1">
+        <label for="name" class="contactForm-label">Your name</label>
+        <input type="text" autocomplete="name" name="name" id="name" class="contactForm-control" required>
+    </div>
+    <div class="contactForm-div">	
+        <label for="email" class="contactForm-label">Your email address</label>
+        <input type="email" name="email" autocomplete="email" id="email" class="contactForm-control" required>
+    </div>
+    <div class="contactForm-div">
+        <label for="message" class="contactForm-label">How can we help you</label>
+        <textarea cols="5" id="message" autocomplete="off" maxlength="2000" name="message" rows="10" class="contactForm-control"></textarea>
+    </div>	
+    <div>
+        <input type="button" value="Contact CANAXESS" class="contactForm-button submit">
+    </div>
+</form>
+
+<script src="../_assets/scripts/contactform.js"></script>

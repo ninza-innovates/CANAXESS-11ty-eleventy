@@ -1,0 +1,34 @@
+.guides
+{
+    display: flex;
+    flex-direction:row;
+	flex-wrap: wrap;
+}
+
+.guides img:nth-child(1), .guides img:nth-child(2)
+{
+    margin-right: 5px;
+}
+
+.guides img
+{
+    max-width:235px;
+    width: auto;
+    height: auto;
+}
+
+p.light
+{
+    color:#788b9b;
+}
+
+.card-display .details
+{
+    margin-left:20px;
+    max-width:400px;
+}
+
+pre + p
+{
+    margin-top:35px;
+}
