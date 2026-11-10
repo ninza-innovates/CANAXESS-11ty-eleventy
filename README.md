@@ -26,13 +26,13 @@ It uses the same input and output directories as a production build: `src/` and 
 
 ## Build
 
-`package.json` does not define a `build` script. Generate the site with:
+`package.json` does not define a `build` script. `_site/` is generated output and is listed in `.gitignore`, so it is not part of the repository. Regenerate it with:
 
 ```bash
 npx eleventy
 ```
 
-Output is written to `_site/`.
+That command reads `src/` (including the homepage, RSS feed, and sitemap templates) and writes a fresh `_site/`, including passthrough copies of `_assets`, `download`, `contact/formfragment.html`, and article images.
 
 ### npm scripts
 
